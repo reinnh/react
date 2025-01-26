@@ -20,11 +20,10 @@ function App() {
 
   return (
    <Router>
-      <Header/>
       <Routes>
-          <Route path='/' element={
+          <Route path='/react' element={
              <>
-             <Header/> 
+             <Header/>
              <Heroes/>
              <About/>
              <Experience/>
@@ -38,10 +37,10 @@ function App() {
           }
           ></Route>
           {/*blog page */}
-          <Route path='/blog.jsx' element={<Blog/>}/>
+          <Route path='/blog' element={<Blog/>}/>
 
           {/*our team */}
-          <Route path='/team.jsx' element={<TeamSection/>}/>
+          <Route path='/team' element={<TeamSection/>}/>
       </Routes>
    </Router>
   )

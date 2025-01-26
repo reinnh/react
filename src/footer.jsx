@@ -35,7 +35,7 @@ function Footer(){
                         </div>
                     </div>
                    <p> &copy; Coppyright 2025</p>
-                   <div className="d-flex justify-content-center"><p>Designed by : </p><a className='re-link' href="https://reinnh.github.io/re/"> reigen</a></div>
+                   <div className="d-flex justify-content-center"><p>Designed by : </p><a className='re-link' href="https://reinnh.github.io/myreactrepo/"> reigen</a></div>
                 </div>
             </div>
           </section>

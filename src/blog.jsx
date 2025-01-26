@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 
 import Portfoilio from "./portfolio";
 import Footer from "./footer";
@@ -8,6 +9,55 @@ function Blog(){
 
     return(
         <>
+         <section className="tnav  " id="home">
+                <nav className="navbar navbar-expand-lg navbar-light bg-light">
+                    <div className="container-fluid d-lg-flex justify-content-between ">
+                        <a href="#" className="navbar-brand">
+                            <span className="text-warning t fw-bold fs-4 m-3">
+                                FRANCISCO 
+                            </span>
+                                <span className="text-primary t fs-4">
+                                     IteriorDesign
+                                 </span>
+                        </a>
+                        <button 
+                            type="button" 
+                            className="navbar-toggler rem-decorarion  sm-none" 
+                            data-bs-toggle="collapse"
+                            data-bs-target="#navbarNav"
+                            aria-controls="navbarNav"
+                            aria-expanded="false"
+                            arial-label="Toggle navigation"
+                         >
+                            <span 
+                                className=" navbar-toggler-icon"    
+                            ></span>
+                        </button>
+                        <div className="collapse navbar-collapse d-lg-flex " id="navbarNav">
+                            <ul className="d-lg-flex t w-100 justify-content-end gap-4 fw-bold text-primary ">
+                                <div>
+                                    <Link className="nav-link" to="/react"><div className="nav-item">Home</div></Link>
+                                </div>
+                                <div>
+                                    <a className="nav-link" href="#projects"><div className="nav-item">Projects</div></a>
+                                </div>
+                            
+
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+                
+            </section>
+
+             <div className="container-fluid nav-section border-0 sm-display">
+                        <nav className="navbar navbar-light">
+                            <div className="navbar-nav flex-column">
+                                <Link to="/react" className="nav-item nav-link active"><span className="fas fa-home"></span> Home</Link>
+                                <a href="#project" className="nav-item nav-link"><span className="fas fa-tasks"></span> Projects</a>
+                            </div>
+                        </nav>
+                      </div>
         <div className="heros-section" style={
           {
             backgroundImage: `linear-gradient(to right, rgba(0, 0, 0, 0.6), transparent, rgba(0, 0, 0, 0.6)), url(${himage})`,
